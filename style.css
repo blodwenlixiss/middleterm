@@ -34,13 +34,15 @@ main {
 }
 
 /* header */
-.page-wrapper {
+.page-wrapper,
+.wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 40px;
 }
-.page-wrapper ul {
+.page-wrapper ul,
+.wrapper ul {
   list-style-type: none;
   display: flex;
   justify-content: center;
@@ -49,7 +51,8 @@ main {
   padding: 0;
   margin: 0;
 }
-.page-wrapper a {
+.page-wrapper a,
+.wrapper a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.9);
   font-size: 14px;
@@ -576,6 +579,9 @@ main {
   main {
     padding: 13px;
   }
+  .wrapper {
+    justify-content: space-between;
+  }
   .page-wrapper {
     display: none;
   }
@@ -661,8 +667,7 @@ main {
     align-items: center;
     gap: 20px;
   }
-  .green-price {
-  }
+
   .buttons {
     flex-direction: column;
     width: 100%;
