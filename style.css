@@ -20,6 +20,7 @@ body {
   background-color: white;
 }
 .space-between {
+  position: relative;
   display: flex;
   justify-content: space-between;
 }
@@ -33,13 +34,13 @@ main {
 }
 
 /* header */
-.wrapper {
+.page-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 40px;
 }
-.wrapper ul {
+.page-wrapper ul {
   list-style-type: none;
   display: flex;
   justify-content: center;
@@ -48,7 +49,7 @@ main {
   padding: 0;
   margin: 0;
 }
-.wrapper a {
+.page-wrapper a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.9);
   font-size: 14px;
@@ -183,11 +184,175 @@ main {
   font-size: 16px;
   font-weight: 600;
 }
+
 .price-flex {
   color: #000;
   font-family: Poppins;
   font-size: 16px;
   accent-color: rgb(63, 163, 50);
+}
+
+.page-block {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 40px;
+}
+.page-white-bg {
+  grid-column: 2/3;
+  max-width: 100%;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 32px;
+  border-radius: 24px;
+}
+.page-main {
+  max-width: 100%;
+  height: 100%;
+  grid-template-columns: 1/2;
+}
+.page-white-bg ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+.page-vip {
+  background-color: #29b24e;
+  padding: 6px 10px;
+  border-radius: 24px;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+}
+.description {
+  margin-bottom: 40px;
+}
+.description h2 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.description span {
+  color: #000;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.6;
+}
+.description p {
+  color: #000;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  opacity: 0.8;
+}
+.page-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  margin-bottom: 20px;
+}
+.grey-title {
+  color: #000;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px; /* 191.667% */
+  opacity: 0.6;
+}
+.content {
+  display: block;
+  color: #000;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+}
+.grid-item-one {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.grid-item-two {
+  grid-column: 2/3;
+  grid-row: 1/4;
+}
+.wd-fix {
+  max-width: 133px;
+}
+.grid-item-three {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+.grid-item-four {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.grid-item-five {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+.grid-item-six {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.grid-item-seven {
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+.buttons {
+  display: flex;
+  gap: 16px;
+}
+.sent-btn {
+  cursor: pointer;
+  color: #29b24e;
+  padding: 13px 26px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 12px;
+  border: 1px solid #29b24e;
+  background-color: white;
+}
+.sent-btn:hover {
+  background-color: #9eecb3;
+}
+.call-btn {
+  padding: 13px 26px;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 12px;
+  border: 0;
+  background: #29b24e;
+}
+.call-btn:hover {
+  background: #42eb72;
+}
+.page-price {
+  margin-top: 20px;
 }
 /* section 2 */
 .grid-flex {
@@ -242,7 +407,7 @@ main {
 .card-img {
   position: relative;
 }
-.card-img span {
+.vip {
   background-color: #29b24e;
   position: absolute;
   left: 15px;
@@ -357,7 +522,13 @@ main {
   body {
     max-width: 1440px;
   }
-
+  .location-block {
+    display: flex;
+    flex-direction: column;
+  }
+  .page-block {
+    max-width: 100%;
+  }
   .grid-flex {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -405,11 +576,96 @@ main {
   main {
     padding: 13px;
   }
+  .page-wrapper {
+    display: none;
+  }
   .header-nav {
     display: none;
   }
   .sell-btn {
     display: none;
+  }
+  .page-block {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .page-white-bg {
+    padding: 10px 20px;
+    overflow: hidden;
+  }
+
+  .head-span {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+  }
+
+  .page-white-bg ul {
+    list-style-type: none;
+    display: flex;
+    gap: 5px;
+    padding: 0;
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 23px; /* 164.286% */
+  }
+
+  .description h2 {
+    color: #000;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 29px; /* 161.111% */
+  }
+  .description span {
+    color: #000;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .description p {
+    color: #000;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    opacity: 0.8;
+  }
+  .page-grid {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+  }
+  .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .content {
+    text-align: right;
+  }
+  .page-price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .green-price {
+  }
+  .buttons {
+    flex-direction: column;
+    width: 100%;
   }
 
   /* section1 */
