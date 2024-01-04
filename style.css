@@ -579,8 +579,28 @@ main {
   main {
     padding: 13px;
   }
+  .page-wrapper,
   .wrapper {
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+  }
+  .page-wrapper ul,
+  .wrapper ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    padding: 0;
+    margin: 0;
+  }
+  .page-wrapper a,
+  .wrapper a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 14px;
   }
   .page-wrapper {
     display: none;
