@@ -6,7 +6,6 @@ body {
   max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
-
   font-family: Poppins;
   background: #f2f2f2;
 }
@@ -27,10 +26,8 @@ body {
 a {
   text-decoration: none;
 }
-header,
-main {
-  padding: 0 140px;
-  overflow: hidden;
+.standart-padding {
+  padding: 0px 140px;
 }
 
 /* header */
@@ -74,6 +71,7 @@ main {
   display: flex;
   gap: 30px;
   margin-top: 30px;
+  padding: 0px 140px;
 }
 .section-nav {
   box-sizing: border-box;
@@ -288,37 +286,7 @@ main {
   font-weight: 500;
   line-height: 26px;
 }
-.grid-item-one {
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
-.grid-item-two {
-  grid-column: 2/3;
-  grid-row: 1/4;
-}
-.wd-fix {
-  max-width: 133px;
-}
-.grid-item-three {
-  grid-column: 3/4;
-  grid-row: 1/2;
-}
-.grid-item-four {
-  grid-column: 1/2;
-  grid-row: 2/3;
-}
-.grid-item-five {
-  grid-column: 3/4;
-  grid-row: 2/3;
-}
-.grid-item-six {
-  grid-column: 1/2;
-  grid-row: 3/4;
-}
-.grid-item-seven {
-  grid-column: 3/4;
-  grid-row: 3/4;
-}
+
 .buttons {
   display: flex;
   gap: 16px;
@@ -358,44 +326,18 @@ main {
   margin-top: 20px;
 }
 /* section 2 */
-.grid-flex {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto;
-  gap: 20px;
+.second-section {
+  padding-bottom: 50px;
 }
-.grid-one {
-  grid-column: 1/2;
-  grid-row: 1/2;
+
+.flex-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
-.grid-two {
-  grid-column: 2/3;
-  grid-row: 1/2;
-}
-.grid-three {
-  grid-column: 3/4;
-  grid-row: 1/2;
-}
-.grid-four {
-  grid-column: 4/5;
-  grid-row: 1/2;
-}
-.grid-five {
-  grid-column: 1/2;
-  grid-row: 2/3;
-}
-.grid-six {
-  grid-column: 2/3;
-  grid-row: 2/3;
-}
-.grid-seven {
-  grid-column: 3/4;
-  grid-row: 2/3;
-}
-.grid-eight {
-  grid-column: 4/5;
-  grid-row: 2/3;
-}
+
 .card-block {
   background-color: #f8f8f8;
   box-sizing: border-box;
@@ -490,7 +432,6 @@ main {
 .green-bg {
   box-sizing: border-box;
   background-color: #29b24e;
-  margin-top: 140px;
   padding: 30px 130px;
   border-radius: 20px;
   width: 100%;
@@ -498,7 +439,6 @@ main {
 .footer-nav {
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
 }
 .footer-nav span,
 .footer-nav ul,
@@ -516,7 +456,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+
   color: white;
 }
 /* media */
@@ -531,44 +471,6 @@ main {
   }
   .page-block {
     max-width: 100%;
-  }
-  .grid-flex {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    gap: 20px;
-  }
-  .grid-one {
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-  .grid-two {
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-  .grid-three {
-    grid-column: 3/4;
-    grid-row: 1/2;
-  }
-  .grid-four {
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-  .grid-five {
-    grid-column: 2/3;
-    grid-row: 2/3;
-  }
-  .grid-six {
-    grid-column: 3/4;
-    grid-row: 2/3;
-  }
-  .grid-seven {
-    grid-column: 1/2;
-    grid-row: 3/4;
-  }
-  .grid-eight {
-    grid-column: 2/3;
-    grid-row: 3/4;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -595,6 +497,9 @@ main {
     gap: 48px;
     padding: 0;
     margin: 0;
+  }
+  .standart-padding {
+    padding: 20px 10px;
   }
   .page-wrapper a,
   .wrapper a {
@@ -696,6 +601,7 @@ main {
   /* section1 */
   .first-section {
     flex-direction: column-reverse;
+    padding: 0px 10px;
   }
   .hidden {
     display: block;
@@ -749,12 +655,6 @@ main {
     padding: 6px;
   }
   /* section 2 */
-  .grid-flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
 
   .card-img img {
     max-width: 300px;
