@@ -687,10 +687,7 @@ a {
     transform: translateX(-50%);
     z-index: 1;
   }
-  .space-evenly {
-    display: flex;
-    justify-content: space-evenly;
-  }
+
   .space-around {
     display: flex;
     justify-content: space-around;
