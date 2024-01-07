@@ -9,7 +9,7 @@ body {
   font-family: Poppins;
   background: #f2f2f2;
 }
-.fixed {
+.mobile-menu {
   display: none;
 }
 .hidden {
@@ -21,7 +21,7 @@ body {
 .white-bg {
   background-color: white;
 }
-.space-between {
+.custom-space {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -674,7 +674,7 @@ a {
   .footer-nav ul {
     flex-direction: column;
   }
-  .fixed {
+  .mobile-menu {
     display: block;
     position: fixed;
     bottom: 0;
@@ -687,11 +687,7 @@ a {
     transform: translateX(-50%);
     z-index: 1;
   }
-  .space-evenly {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .space-around {
+  .navigation-wrapper {
     display: flex;
     justify-content: space-around;
     align-items: center;
