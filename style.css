@@ -687,6 +687,7 @@ a {
     transform: translateX(-50%);
     z-index: 1;
   }
+
   .navigation-wrapper {
     display: flex;
     justify-content: space-around;
