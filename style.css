@@ -691,7 +691,6 @@ a {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
     gap: 10px;
   }
   .green-plus {
@@ -701,6 +700,7 @@ a {
     padding: 12px;
     border-radius: 12px;
     background-color: #29b24e;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.4);
   }
   .home,
   .discover,
